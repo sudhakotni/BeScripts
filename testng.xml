@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Room_Classes">
+    <classes>
+      <class name="innRoad.suite.Room_Classes"/>
+    </classes>
+  </test> <!-- Test -->
+   <test name="Seasons">
+    <classes>
+      <class name="innRoad.suite.Seasons"/>
+    </classes>
+  </test> <!-- Test -->
+   <test name="Rates">
+    <classes>
+      <class name="innRoad.suite.Rates"/>
+    </classes>
+  </test> <!-- Test -->
+   <test name="Package">
+    <classes>
+      <class name="innRoad.suite.Package"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Taxes">
+    <classes>
+      <class name="innRoad.suite.Taxes"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->
