@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="IHD-9BP98R1" name="innRoad.suite.TestSeasons" tests="1" failures="0" timestamp="28 Jun 2016 14:02:50 GMT" time="173.472" errors="0">
+  <testcase name="test3" time="173.457" classname="innRoad.suite.TestSeasons"/>
+</testsuite>

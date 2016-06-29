@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="innRoad.suite.Usergent_Iphone">
+      <class name="innRoad.suite.TestSeasons">
         <methods>
-          <include name="stop"/>
-          <include name="testUntitled" invocation-numbers="0"/>
+          <include name="test3"/>
         </methods>
-      </class> <!-- innRoad.suite.Usergent_Iphone -->
+      </class> <!-- innRoad.suite.TestSeasons -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -122,7 +122,7 @@ public class BaseTest {
 		} else if (Config.browser.equals("IE")) {
 			
 			System.setProperty("webdriver.ie.driver",
-					"U:\\eclipse\\InnRoad_DataDrivenFramework\\Lists Formats\\Drivers\\IEDriverServer.exe");
+					"C:\\Users\\sudha.kotni\\Documents\\My Received Files\\Drivers\\IEDriverServer.exe");
 			 DesiredCapabilities capab1 =DesiredCapabilities.internetExplorer();  
 	           capab1.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);  
 	           capab1.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);  
@@ -133,17 +133,16 @@ public class BaseTest {
 
 		} else if (Config.browser.equals("GC")) {
 			
-			System.setProperty("webdriver.chrome.driver","U:\\eclipse\\InnRoad_DataDrivenFramework\\Lists Formats\\Drivers\\chromedriver.exe");
-			ChromeOptions options = new ChromeOptions();
+			System.setProperty("webdriver.chrome.driver","C:\\Users\\sudha.kotni\\Documents\\My Received Files\\Drivers\\chromedriver.exe");
+			/*ChromeOptions options = new ChromeOptions();
 			options.addArguments("--user-agent=Mozilla/5.0 (Linux; U; Android 4.0.4; en-gb; GT-I9300 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"); //iPhone 4
-			options.addArguments("--start-maximized");
-			d = new ChromeDriver(options);
-			//d = new ChromeDriver();
+			options.addArguments("--start-maximized");*/
+			//d = new ChromeDriver(options);
+			d = new ChromeDriver();
 
 		}
 
-		datatable_suite1 = new Xls_Reader(System.getProperty("user.dir")
-				+ "\\src\\innRoad\\testdata\\TestData.xlsx");
+		datatable_suite1 = new Xls_Reader(System.getProperty("U:\\eclipse\\Workspace\\InnRoad_DataDriven_FrameWork\\src\\innRoad\\testdata\\TestData.xlsx"));
 
 	}
 
@@ -160,7 +159,7 @@ public class BaseTest {
 		
 		// baseUrl = "http://www.seleniummaster.com";
 		
-		String fileName = "U:\\Innroad_DataDriven\\InnRoad_DataDriven_FrameWork\\src\\innRoad\\reports\\TestResults.xls";
+		String fileName = "..\\..\\..\\..\\src\\innRoad\reports\\TestResults.xls";
 		POIFSFileSystem fileSystem = new POIFSFileSystem(new FileInputStream(
 				fileName));
 		workbook = new HSSFWorkbook(fileSystem);
@@ -206,7 +205,7 @@ public class BaseTest {
 			}
 		}
 		try {
-			FileOutputStream out = new FileOutputStream("U:\\Innroad_DataDriven\\InnRoad_DataDriven_FrameWork\\src\\innRoad\\reports\\TestResults.xls");
+			FileOutputStream out = new FileOutputStream("U:\\eclipse\\Workspace\\InnRoad_DataDriven_FrameWork\\src\\innRoad\\reports\\TestResults.xls");
 			workbook.write(out);
 			out.close();
 			System.out.println("Excel written successfully..");

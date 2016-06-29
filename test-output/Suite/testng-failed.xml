@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+  <test name="test3(failed)">
     <classes>
-      <class name="innRoad.suite.Booking_Engine">
+      <class name="innRoad.suite.TestSeasons">
         <methods>
-          <include name="testUntitled" invocation-numbers="0"/>
-          <include name="stop"/>
+          <include name="test3"/>
         </methods>
-      </class> <!-- innRoad.suite.Booking_Engine -->
+      </class> <!-- innRoad.suite.TestSeasons -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- test3(failed) -->
 </suite> <!-- Failed suite [Suite] -->
